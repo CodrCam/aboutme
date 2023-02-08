@@ -52,14 +52,14 @@ if (q5guess === 'football' || q5guess === 'skiing'){
 }
 
 //Print Statement
-document.write(`Thanks for playing my game ${userName}!`+"<br>");
+document.write(`Thanks for playing my game ${userName}!`+'<br>');
 
-document.write(`You guessed "${q1guess}" if I had kids I don't.`+"<br>");
+document.write(`You guessed '${q1guess}' if I had kids I don't.`+'<br>');
 
-document.write(`You guessed "${q2guess}" for my favorite color which is "red".`+"<br>");
+document.write(`You guessed '${q2guess}' for my favorite color which is "red".`+'<br>');
 
-document.write(`You guessed "${q3guess}" for my favorite number it was "7".`+"<br>");
+document.write(`You guessed '${q3guess}' for my favorite number it was "7".`+'<br>');
 
-document.write(`You guessed "${q4guess}" as my favorite animal which is a "cat".`+"<br>");
+document.write(`You guessed '${q4guess}' as my favorite animal which is a "cat".`+'<br>');
 
-document.write(`You guessed "${q5guess}" as my favorite sport, I would have accepted "football" or "skiing".`+"<br>");
+document.write(`You guessed '${q5guess}' as my favorite sport, I would have accepted 'football' or 'skiing'.`+'<br>');
