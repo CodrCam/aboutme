@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+h1 {
+    font-size:xx-large;
+}
+h2 {
+    font-size: x-large;
+}
+ul {
+    list-style: circle;
+}
+p {
+    padding: 5%;
+    font-size: larger;
+}
