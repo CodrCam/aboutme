@@ -18,6 +18,25 @@ console.log(count);
 //Color? Question 3
 let q2guess = prompt('What is my favorite color?').toLowerCase();
 
+
+function camColor(){
+  let colors = ['red', 'blue', 'green'];
+
+  for(let i = 0; i < 2; i++){   // slow loop i = 0
+    let favColor = prompt('What are my favorite colors').toLowerCase();
+   // user's guess - nsync
+    for(let j = 0; j < colors.length; j++){  // fast loop j = 0
+      if(favColor === colors[j]){
+        alert('Yep that is correct');
+        i = 1;
+        break;
+      }
+    }
+  }
+}
+camColor();
+
+
 if (q2guess === 'red'){
   alert('Indeed red is my favorite color');
   count++;
