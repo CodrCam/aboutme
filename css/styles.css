@@ -14,17 +14,20 @@ h3 {
     padding: .5%;
 }
 ul {
-    list-style: circle;
+    list-style: inside;
 }
 
 ol {
-    list-style: revert;
+    list-style-position: inside;
+    list-style-type: decimal;
 }
+
 p {
     padding: 2%;
     margin: .5%;
     font-size: larger;
 }
+
 script {
     font-size: x-large;
     font-stretch: expanded;
