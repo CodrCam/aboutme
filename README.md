@@ -6,7 +6,13 @@
 
 - [Google](https://www.google.com/)
 
-![Access](img/Screenshot%202023-02-07%20at%2011.26.58%20PM.png)
+### Lab2
+
+![Access](img/lab2access.png)
+
+### Lab3
+
+![Access](img/lab3access.png)
 
 ## Submission PR
 
