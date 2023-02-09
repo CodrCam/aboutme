@@ -9,7 +9,6 @@ let q1guess = prompt(`Hey ${userName} do you think I have a kid? yes/no`).toLowe
 
 if (q1guess === 'yes'){
   alert('nope');
-  count--;
 } else if(q1guess === 'no') {
   alert('Correct I do not');
   count++;
@@ -24,7 +23,6 @@ if (q2guess === 'red'){
   count++;
 } else if(q2guess !== 'red') {
   alert('Nope not that color....');
-  count--;
   //console.log(q2guess);
 }
 console.log(count);
@@ -37,7 +35,6 @@ if (textguess === 7){
   count++;
 } else if(textguess !== 7) {
   alert('Guessed wrong....');
-  count--;
   //console.log(q3guess);
 }
 console.log(count);
@@ -50,7 +47,6 @@ if (q4guess === 'cat'){
   count++;
 } else if(q4guess !== 'cat') {
   alert('Nah, I do not think so');
-  count--;
   //console.log(q4guess);
 }
 console.log(count);
@@ -62,12 +58,11 @@ if (q5guess === 'football' || q5guess === 'skiing'){
   count++;
 } else if(q5guess !== 'football' || q5guess !== 'skiing'){
   alert('I might like that but not my favorite.');
-  count--;
   //console.log(q5guess);
 }
 console.log('last count:', count);
 
-//Guess a number Question 7?
+//Guess a number Question?
 //Generates a random number between 1-5
 let randoNum = Math.floor(Math.random() * 10) +1;
 console.log('Random Number:', randoNum);
@@ -88,10 +83,37 @@ while(1 <= numOfGuess){
 for(let i = 0; i < userGuessArray.length; i++) {
   if (userGuessArray[i] === randoStrNum){
     alert (`Awesome job the random number was ${randoNum}`);
+    count++;
   }else if(userGuessArray[i] !== randoStrNum) {
     alert(`Your guess of ${userGuessArray[i]} was wrong`);
   }
 }
+
+//Guess words from user array loop
+let userGuessArray2 = [];
+userGuessArray2.push(prompt('Guess two names I go by other than Cameron Griffin, you get 6 guesses. Then I will let you know if any were right!').toLowerCase());
+//The number of guesses given to the user
+let numOfGuess2 = 5;
+// 1st attempt at While loop to iterate through the guesses
+while(1 <= numOfGuess2){
+  numOfGuess2--;
+  userGuessArray2.push(prompt(`Keep guesing, you have ${numOfGuess2} guesses left, guess again.`).toLowerCase());
+  console.log('guess:', userGuessArray2);
+}
+//Alert For user feedback
+
+for(let i = 0; i < userGuessArray2.length; i++) {
+  if (userGuessArray2[i] === 'cam'){
+    alert (`Cam Was a correct one`);
+    count++;
+  }else if(userGuessArray2[i] === 'grif'){
+    alert (`Grif Was a correct one`);
+  }else if(userGuessArray2[i] !== randoStrNum) {
+    alert(`Your guess of ${userGuessArray2[i]} was wrong`);
+  }
+}
+
+
 
 
 //Print Statement
@@ -108,5 +130,7 @@ document.write(`You guessed '${q4guess}' as my favorite animal which is a "cat".
 document.write(`You guessed '${q5guess}' as my favorite sport, I would have accepted 'football' or 'skiing'.`+'<br>');
 
 document.write(`You guessed '${userGuessArray}' as the random number , and it was '${randoNum}''.`+'<br>');
+
+document.write(`You guessed '${userGuessArray2}' for names , my nicknames are "Cam" and "Grif"''.`+'<br>');
 
 document.write(`Your scored ${count} on the 'How well do you know Cam' quiz, if you're not negitive I appreciate the positivity :)`+'<br>');
