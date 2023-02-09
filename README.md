@@ -2,6 +2,9 @@
 
 ## Author: Cameron Griffin
 
+Driver: Chris
+Navigator: Cam
+
 ## Links and Resources
 
 - [Google](https://www.google.com/)
