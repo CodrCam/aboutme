@@ -3,14 +3,31 @@ body {
 }
 h1 {
     font-size:xx-large;
+    padding: 1%;
 }
 h2 {
     font-size: x-large;
+    padding: .5%;
+}
+h3 {
+    font-size: x-large;
+    padding: .5%;
 }
 ul {
     list-style: circle;
 }
+
+ol {
+    list-style: revert;
+}
 p {
-    padding: 5%;
+    padding: 2%;
+    margin: .5%;
     font-size: larger;
+}
+script {
+    font-size: x-large;
+    font-stretch: expanded;
+    padding: .5%;
+    margin: auto;
 }
