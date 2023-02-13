@@ -1,9 +1,10 @@
 body {
     text-align: center;
+    color: whitesmoke;
+    background-color: black;
 }
 h1 {
     font-size:xx-large;
-    padding: 1%;
 }
 h2 {
     font-size: x-large;
@@ -23,11 +24,13 @@ ol {
 }
 
 p {
-    padding: 2%;
-    margin: .5%;
+    padding: .5%;
     font-size: larger;
 }
 
+div{
+    padding: 2em;
+}
 script {
     font-size: x-large;
     font-stretch: expanded;
