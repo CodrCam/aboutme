@@ -7,20 +7,19 @@ let questions = [{ question: (`Hey ${userName} do you think I have a kid? yes/no
 let correctAnswers = 0;
 let i = 0;
 
-while (correctAnswers < questions.length) {
-  let answer = prompt(questions[i].question).toLowerCase();
-  if (answer === questions[i].answer) {
-    alert('Correct!');
-    correctAnswers++;
-  } else {
-    alert('Incorrect. The correct answer is ' + questions[i].answer);
+function questionAns(){
+  while (correctAnswers < questions.length) {
+    let answer = prompt(questions[i].question).toLowerCase();
+    if (answer === questions[i].answer) {
+      alert('Correct!');
+      correctAnswers++;
+    } else {
+      alert('Incorrect. The correct answer is ' + questions[i].answer);
+    }
+    i++;
   }
-  i++;
+  return correctAnswers;
 }
-console.log('user name:', userName);
-console.log('the score:', correctAnswers);
 
+questionAns();
 
-/* document.write(`Thanks for playing my game ${userName}!`);
-
-document.write(`Your scored ${count} on the 'How well do you know Cam' quiz.`); */
